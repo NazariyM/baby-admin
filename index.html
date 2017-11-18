@@ -1,0 +1,580 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Бэби клуб</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="#!">
+                <img src="img/logo.svg"/>
+                <p>Бережное развитие интеллекта</p>
+            </a>
+            <div class="header__location">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="24" viewBox="0 0 16 24">
+              <defs><path
+                  id="cq5ga"
+                  d="M633.3 57.94c-.01.11-.04.23-.1.35l-5.14 9.36a.62.62 0 0 1-1.12 0l-5.15-9.38a.74.74 0 0 1-.08-.33 7.1 7.1 0 0 1-.71-3.1c0-3.77 2.91-6.84 6.5-6.84s6.5 3.07 6.5 6.85a7.1 7.1 0 0 1-.7 3.09zm-8.08-3.47c0 1.33 1.02 2.4 2.28 2.4a2.35 2.35 0 0 0 2.28-2.4c0-1.33-1.02-2.4-2.28-2.4a2.35 2.35 0 0 0-2.28 2.4z"/></defs>
+              <g>
+                  <g transform="translate(-619 -46)"><use fill="#25a84a" xlink:href="#cq5ga"/></g>
+              </g>
+          </svg>
+                <span>г. Москва</span>
+                <span>Бескудниково</span>
+            </div>
+            <div class="header__actions">
+                <button class="header__actions-btn btn btn_purple btn_md" type="button">ВЫХОД</button>
+                <a href="#!">Сменить пароль</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero clearfix">
+            <div id="bg-img" class="hero__bg" style="background-image: url(img/hero_bg.jpg);"></div>
+            <div class="hero__choose-btn">
+                <label class="btn btn_lg btn_red" for="bg-btn">ЗАГРУЗИТЬ НОВУЮ КАРТИНКУ</label>
+                <input type='file' id='bg-btn' />
+            </div>
+            <div class="hero__form">
+                <div class="form-field">
+                    <input type="text" name="" value="Ваше имя" readonly>
+                </div>
+                <div class="form-field form-field_has-btn">
+                    <input type="text" name="" value="Ваш номер телефона" readonly data-input='hero-tel'>
+                    <button class="edit-btn js-edit-btn" data-input-target='hero-tel' type="button" name="button">
+                <img src="img/pencil.svg">
+              </button>
+                </div>
+                <div class="form-field form-field_has-btn">
+                    <input class="is-btn-gray" type="text" name="" value="Записаться" readonly data-input='hero-btn'>
+                    <button class="edit-btn js-edit-btn" type="button" name="button" data-input-target='hero-btn'>
+                <img src="img/pencil.svg">
+              </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="employees clearfix">
+            <h2 class="title">Преподаватели клуба</h2>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" data-input='empl-1' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_yellow btn_sm js-edit-btn" data-input-target='empl-1' type="button" name="button">Редактировать</button>
+                <button class="btn btn_yellow btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" data-input='empl-2' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_yellow btn_sm js-edit-btn" data-input-target='empl-2' type="button" name="button">Редактировать</button>
+                <button class="btn btn_yellow btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" data-input='empl-3' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_yellow btn_sm js-edit-btn" data-input-target='empl-3' type="button" name="button">Редактировать</button>
+                <button class="btn btn_yellow btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" data-input='empl-4' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_yellow btn_sm js-edit-btn" data-input-target='empl-4' type="button" name="button">Редактировать</button>
+                <button class="btn btn_yellow btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" data-input='empl-5' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_yellow btn_sm js-edit-btn" data-input-target='empl-5' type="button" name="button">Редактировать</button>
+                <button class="btn btn_yellow btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" data-input='empl-6' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_yellow btn_sm js-edit-btn" data-input-target='empl-6' type="button" name="button">Редактировать</button>
+                <button class="btn btn_yellow btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <button class="employees__add-btn btn btn_yellow btn_md js-add-btn" type="button" name="button">Добавить нового преподавателя</button>
+            <div class="form-field form-field_has-btn">
+                <input class="is-btn-orange" type="text" name="" value="Задать вопрос педагогу" readonly data-input="employees-btn">
+                <button class="edit-btn js-edit-btn" type="button" name="button" data-input-target="employees-btn">
+                <img src="img/pencil.svg">
+              </button>
+            </div>
+        </section>
+
+        <section class="study section">
+            <h2 class="title">ЧЕМУ НАУЧИТСЯ ВАШ МАЛЫШ</h2>
+            <div class="form-field form-field_has-btn">
+                <input class="is-btn-orange" type="text" name="" value="Записаться на пробное занятие" readonly data-input="study-btn">
+                <button class="edit-btn js-edit-btn" type="button" name="button" data-input-target="study-btn">
+                <img src="img/pencil.svg">
+              </button>
+            </div>
+        </section>
+
+        <section class="study section">
+            <h2 class="title">Фото и видео клуба</h2>
+            <div class="row">
+                <div class="study__item">
+                    <div class="study__item-img">
+                        <img src="img/study.jpg" alt="">
+                    </div>
+                    <a href="#!">Удалить</a>
+                </div>
+                <div class="study__item">
+                    <div class="study__item-img">
+                        <img src="img/study.jpg" alt="">
+                    </div>
+                    <a href="#!">Удалить</a>
+                </div>
+                <div class="study__item">
+                    <div class="study__item-img">
+                        <img src="img/study.jpg" alt="">
+                    </div>
+                    <a href="#!">Удалить</a>
+                </div>
+            </div>
+            <button class="study__btn btn btn_purple btn_md" type="button" name="button">Добавить фотографии/видео</button>
+        </section>
+
+        <section class="advantages section">
+            <h2 class="title">Преимущества клуба</h2>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" id="" placeholder="Ваш текст">
+                </div>
+                <span class="advantages__label">Максимум 80 символов</span>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" id="" placeholder="Ваш текст">
+                </div>
+                <span class="advantages__label">Максимум 80 символов</span>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" id="" placeholder="Ваш текст">
+                </div>
+                <span class="advantages__label">Максимум 80 символов</span>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" id="" placeholder="Ваш текст">
+                </div>
+                <span class="advantages__label">Максимум 80 символов</span>
+            </div>
+            <div class="row">
+                <div class="form-field">
+                    <input type="text" name="" id="" placeholder="Ваш текст">
+                </div>
+                <span class="advantages__label">Максимум 80 символов</span>
+            </div>
+        </section>
+
+        <section class="programs section">
+            <h2 class="title">Программы клуба</h2>
+            <div class="programs__labels">
+                <div class="programs__labels-title">
+                    Название программы
+                </div>
+                <div class="programs__label-title">
+                    Цена в месяц, рублей
+                </div>
+            </div>
+            <div class="programs__field">
+                <div class="toggler js-toggler">
+                    <input class="toggler-input" id="toggler-1" type="checkbox" checked hidden="true">
+
+                    <label class="choices" for="toggler-1">
+                			<span class="choice on">on</span>
+                			<span class="choice off">off</span>
+
+                			<div class="knob"></div>
+              		</label>
+                </div>
+                <div class="form-field form-field_lg">
+                  <input type="text" name="" id="" value="Бэбик">
+                </div>
+                <div class="form-field form-field_sm">
+                  <input type="text" name="" id="" value="4 000">
+                </div>
+            </div>
+            <div class="programs__field">
+                <div class="toggler js-toggler">
+                    <input class="toggler-input" id="toggler-2" type="checkbox" checked hidden="true">
+
+                    <label class="choices" for="toggler-2">
+                			<span class="choice on">on</span>
+                			<span class="choice off">off</span>
+
+                			<div class="knob"></div>
+              		</label>
+                </div>
+                <div class="form-field form-field_lg">
+                  <input type="text" name="" id="" value="Бэбик">
+                </div>
+                <div class="form-field form-field_sm">
+                  <input type="text" name="" id="" value="7 500">
+                </div>
+            </div>
+            <div class="programs__field">
+                <div class="toggler js-toggler">
+                    <input class="toggler-input" id="toggler-3" type="checkbox" checked hidden="true">
+
+                    <label class="choices" for="toggler-3">
+                			<span class="choice on">on</span>
+                			<span class="choice off">off</span>
+
+                			<div class="knob"></div>
+              		</label>
+                </div>
+                <div class="form-field form-field_lg">
+                  <input type="text" name="" id="" value="Бэбик">
+                </div>
+                <div class="form-field form-field_sm">
+                  <input type="text" name="" id="" value="8 000">
+                </div>
+            </div>
+            <div class="programs__field">
+                <div class="toggler js-toggler">
+                    <input class="toggler-input" id="toggler-4" type="checkbox" hidden="true">
+
+                    <label class="choices" for="toggler-4">
+                			<span class="choice on">on</span>
+                			<span class="choice off">off</span>
+
+                			<div class="knob"></div>
+              		</label>
+                </div>
+                <div class="form-field form-field_lg">
+                  <input type="text" name="" id="" value="Бэбик">
+                </div>
+                <div class="form-field form-field_sm">
+                  <input type="text" name="" id="" value="4 000">
+                </div>
+            </div>
+            <div class="programs__field">
+                <div class="toggler js-toggler">
+                    <input class="toggler-input" id="toggler-5" type="checkbox" hidden="true">
+
+                    <label class="choices" for="toggler-5">
+                			<span class="choice on">on</span>
+                			<span class="choice off">off</span>
+
+                			<div class="knob"></div>
+              		</label>
+                </div>
+                <div class="form-field form-field_lg">
+                  <input type="text" name="" id="" value="Бэбик">
+                </div>
+                <div class="form-field form-field_sm">
+                  <input type="text" name="" id="" value="4 000">
+                </div>
+            </div>
+            <div class="programs__field">
+                <div class="toggler js-toggler">
+                    <input class="toggler-input" id="toggler-6" type="checkbox" hidden="true">
+
+                    <label class="choices" for="toggler-6">
+                			<span class="choice on">on</span>
+                			<span class="choice off">off</span>
+
+                			<div class="knob"></div>
+              		</label>
+                </div>
+                <div class="form-field form-field_lg">
+                  <input type="text" name="" id="" value="Бэбик">
+                </div>
+                <div class="form-field form-field_sm">
+                  <input type="text" name="" id="" value="4 000">
+                </div>
+            </div>
+            <div class="programs__field">
+                <div class="toggler js-toggler">
+                    <input class="toggler-input" id="toggler-7" type="checkbox" hidden="true">
+
+                    <label class="choices" for="toggler-7">
+                			<span class="choice on">on</span>
+                			<span class="choice off">off</span>
+
+                			<div class="knob"></div>
+              		</label>
+                </div>
+                <div class="form-field form-field_lg">
+                  <input type="text" name="" id="" value="Бэбик">
+                </div>
+                <div class="form-field form-field_sm">
+                  <input type="text" name="" id="" value="4 000">
+                </div>
+            </div>
+        </section>
+
+        <section class="trial section">
+
+          <div class="form-field form-field_has-btn">
+            <input class='is-title' type="text" name="" value="Запишитесь на пробное занятие" readonly data-input="trial-title">
+            <button class="edit-btn js-edit-btn" data-input-target="trial-title" type="button" name="button">
+                <img src="img/pencil.svg">
+              </button>
+                </div>
+          <div class="row">
+            <div class="form-field">
+              <input type="text" name="" id="" value="Ваше имя" readonly>
+            </div>
+            <div class="form-field">
+              <input type="text" name="" id="" value="Номер телефона" readonly>
+            </div>
+            <div class="form-field form-field_has-btn">
+              <input class="is-btn-gray" type="text" name="" value="Записаться и получить скидку" readonly="" data-input="trial-btn">
+              <button class="edit-btn js-edit-btn" type="button" name="button" data-input-target="trial-btn">
+                <img src="img/pencil.svg">
+              </button>
+                </div>
+          </div>
+        </section>
+
+        <section class="feed section">
+            <h2 class="title">Отзывы родителей</h2>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-parent-1' value="Вероника, мама Глеба и Матвея" readonly>
+                </div>
+                <button class="btn btn_blue btn_sm js-edit-btn" data-input-target='feed-parent-1' type="button" name="button">Редактировать</button>
+                <button class="btn btn_blue btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-parent-2' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_blue btn_sm js-edit-btn" data-input-target='feed-parent-2' type="button" name="button">Редактировать</button>
+                <button class="btn btn_blue btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-parent-3' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_blue btn_sm js-edit-btn" data-input-target='feed-parent-3' type="button" name="button">Редактировать</button>
+                <button class="btn btn_blue btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-parent-4' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_blue btn_sm js-edit-btn" data-input-target='feed-parent-4' type="button" name="button">Редактировать</button>
+                <button class="btn btn_blue btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-parent-5' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_blue btn_sm js-edit-btn" data-input-target='feed-parent-5' type="button" name="button">Редактировать</button>
+                <button class="btn btn_blue btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-parent-6' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_blue btn_sm js-edit-btn" data-input-target='feed-parent-6' type="button" name="button">Редактировать</button>
+                <button class="btn btn_blue btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <button class="feed__add-btn btn btn_blue btn_md js-add-btn" type="button" name="button">Добавить отзыв родителей</button>
+
+        </section>
+
+        <section class="feed section">
+            <h2 class="title">Отзывы детей</h2>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-child-1' value="Вероника, мама Глеба и Матвея" readonly>
+                </div>
+                <button class="btn btn_red-mod btn_sm js-edit-btn" data-input-target='feed-child-1' type="button" name="button">Редактировать</button>
+                <button class="btn btn_red-mod btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-child-2' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_red-mod btn_sm js-edit-btn" data-input-target='feed-child-2' type="button" name="button">Редактировать</button>
+                <button class="btn btn_red-mod btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-child-3' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_red-mod btn_sm js-edit-btn" data-input-target='feed-child-3' type="button" name="button">Редактировать</button>
+                <button class="btn btn_red-mod btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-child-4' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_red-mod btn_sm js-edit-btn" data-input-target='feed-child-4' type="button" name="button">Редактировать</button>
+                <button class="btn btn_red-mod btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-child-5' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_red-mod btn_sm js-edit-btn" data-input-target='feed-child-5' type="button" name="button">Редактировать</button>
+                <button class="btn btn_red-mod btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <div class="row">
+                <div class="form-field form-field_md">
+                    <input type="text" name="" data-input='feed-child-6' value="Иванова Мария Александровна" readonly>
+                </div>
+                <button class="btn btn_red-mod btn_sm js-edit-btn" data-input-target='feed-child-6' type="button" name="button">Редактировать</button>
+                <button class="btn btn_red-mod btn_sm js-delete-btn" type="button" name="button">Удалить</button>
+            </div>
+            <button class="feed__add-btn btn btn_red-mod btn_md js-add-btn" type="button" name="button">Добавить отзыв родителей</button>
+
+        </section>
+
+        <section class="section contacts">
+          <h2 class="title">Контакты клуба</h2>
+          <div class="row">
+            <span class="form-label">Название клуба</span>
+            <div class="form-field">
+                <input type="text" name="" value="в Бескудниково">
+            </div>
+          </div>
+          <div class="row">
+            <span class="form-label">Станция метро</span>
+            <div class="form-field">
+                <input type="text" name="" value="Авиамоторная">
+            </div>
+          </div>
+          <div class="row">
+            <span class="form-label">Улица</span>
+            <div class="form-field">
+                <input type="text" name="" value="Бескудниковский пр-д">
+            </div>
+          </div>
+          <div class="row">
+            <span class="form-label">Дом</span>
+            <div class="form-field">
+                <input type="text" name="" value="4">
+            </div>
+          </div>
+          <div class="row">
+            <span class="form-label">Корпус</span>
+            <div class="form-field">
+                <input type="text" name="" value="2">
+            </div>
+          </div>
+          <div class="row">
+            <span class="form-label">Офис</span>
+            <div class="form-field">
+                <input type="text" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <span class="form-label">Телефон</span>
+            <div class="form-field">
+                <input class="has-mask" type="text" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <span class="form-label">E-mail</span>
+            <div class="form-field">
+                <input type="text" name="" value="msk.beskudnikovo@babyclub.ru">
+            </div>
+          </div>
+        </section>
+
+        <section class="socials section">
+          <h2 class="title">Социальные сети клуба</h2>
+          <div class="row">
+            <div class="socials__icon">
+              <img src="img/vk.svg" alt="">
+            </div>
+            <div class="form-field form-field_big">
+                <input type="text" name="" value="https://vk.com/babyclubru">
+            </div>
+          </div>
+          <div class="row">
+            <div class="socials__icon">
+              <img src="img/facebook.svg" alt="">
+            </div>
+            <div class="form-field form-field_big">
+                <input type="text" name="" value="https://vk.com/babyclubru">
+            </div>
+          </div>
+          <div class="row">
+            <div class="socials__icon">
+              <img src="img/instagram.svg" alt="">
+            </div>
+            <div class="form-field form-field_big">
+                <input type="text" name="" value="https://vk.com/babyclubru">
+            </div>
+          </div>
+        </section>
+
+        <section class="requests section">
+          <h2 class="title">Почта для заявок с сайта</h2>
+          <p class="descr">На указанный Вами e-mail адрес будут поступать заявки, оставленные на Вашей странице сайта "Бэби-Клуб"</p>
+          <div class="row-wrap">
+            <div class="row">
+              <div class="form-field form-field_big">
+                  <input type="text" name="" value="msk.beskudnikovo@babyclub.ru">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-field form-field_big">
+                  <input type="text" name="" value="msk.beskudnikovo@babyclub.ru">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-field form-field_big">
+                  <input type="text" name="" value="msk.beskudnikovo@babyclub.ru">
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+          <a class="logo" href="#!">
+              <img src="img/logo.svg"/>
+              <p>Бережное развитие интеллекта</p>
+          </a>
+          <div class="dev">
+            <span>Сайт создан руками</span>
+            <a href="http://akticom.ru/" target="_blank">
+              <img src="img/dev_logo.png" alt="Akticom">
+            </a>
+          </div>
+      </div>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
